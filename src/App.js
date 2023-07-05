@@ -290,6 +290,15 @@ function App() {
                         <div className="unpublished">UNPUBLISHED</div>
                       ) : null}
                       <div className="recipe-name">{recipe.name}</div>
+                      <div className="recipe-image-box">
+                        {recipe.imageURL ? (
+                          <img
+                            src={recipe.imageURL}
+                            alt={recipe.name}
+                            className="recipe-image"
+                          />
+                        ) : null}
+                      </div>
                       <div className="recipe-field">
                         Category: {lookupCategoryLabel(recipe.category)}
                       </div>

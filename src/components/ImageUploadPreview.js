@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 
 import FirebaseStorageService from "../FirebaseStorageService";
-import { upload } from "@testing-library/user-event/dist/upload";
 
 function ImageUploadPreview({
   basePath,
